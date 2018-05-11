@@ -6,21 +6,24 @@
 class Fruta : public Produto{
 public:
 	Fruta();
-	Fruta(std::string _codigo, std::string _descricao, short _preco, 
-			std::string _data, short _validade);
+	Fruta( std::string codigo, std::string descricao, short preco, 
+			std::string data, short validade );
 	~Fruta();
+
 private:
-	std::string m_data_lote;
-	short m_validade;
+	std::string data_lote;
+	short validade;
+
 public:
 	// getters
 	std::string getDataLote();
 	short getValidade();
 	// setters
-	void setDataLote(std::string _data);
-	void setValidade(short _validade);
+	void setDataLote( std::string data );
+	void setValidade( short validade );
+	
 private:
-	std::ostream& print(std::ostream &o) const;
+	std::ostream& print( std::ostream &o ) const;
 };
 
 #endif

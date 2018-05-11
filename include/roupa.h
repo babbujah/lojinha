@@ -20,16 +20,17 @@ class Roupa : public Produto{
     public:
         // getters
         string getMarca();
-        string getSexo();
+        //string getSexo();
+        char getSexo();
         char getTamanho();
 
         // setters
-        void setMarca(string marca);
-        void setSexo(char sexo);
-        void setTamanho(char tamanho);
+        void setMarca( string marca );
+        void setSexo( char sexo );
+        void setTamanho( char tamanho );
 
     private:
-        std::ostream& print(std::ostream &o) const;
+        std::ostream& print( std::ostream &o ) const;
 };
 
 #endif

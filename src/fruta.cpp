@@ -3,38 +3,33 @@
 
 Fruta::Fruta() {}
 
-Fruta::Fruta( std::string _codigo, std::string _descricao, short _preco, 
-	std::string _data, short _validade ):
-	Produto( _codigo, _descricao, _preco ), m_data_lote( _data ), m_validade( _validade ) {}
+Fruta::Fruta( std::string codigo, std::string descricao, short preco, 
+	std::string data, short validade ):
+	Produto( codigo, descricao, preco ), data_lote( data ), validade( validade ) {}
 
 Fruta::~Fruta() {}
 
-std::string 
-Fruta::getDataLote() {
-	return m_data_lote;
+std::string Fruta::getDataLote() {
+	return data_lote;
 }
 
-short 
-Fruta::getValidade() {
-	return m_validade;
+short Fruta::getValidade() {
+	return validade;
 }
 
-void 
-Fruta::setDataLote( std::string _data ) {
-	m_data_lote = _data;
+void Fruta::setDataLote( std::string data ) {
+	data_lote = data;
 }
 
-void 
-Fruta::setValidade( short _validade ) {
-	m_validade = _validade;
+void Fruta::setValidade( short validade ) {
+	this->validade = validade;
 }
  
-std::ostream& 
-Fruta::print(std::ostream &o) const {
-	o << std::setfill (' ') << std::setw (10) << m_cod_barras << " | " 
-		<< std::setfill ('.') << std::setw (20) << m_descricao << " | " 
-		<< std::setfill (' ') << std::setw (5) << m_preco << " | "
-		<< std::setfill (' ') << std::setw (10) << m_data_lote << " | " 
-		<< std::setfill (' ') << std::setw (3) << m_validade;
+std::ostream& Fruta::print( std::ostream &o ) const {
+	o << std::setfill (' ') << std::setw (10) << cod_barras << " | " 
+		<< std::setfill ('.') << std::setw (20) << descricao << " | " 
+		<< std::setfill (' ') << std::setw (5) << preco << " | "
+		<< std::setfill (' ') << std::setw (10) << data_lote << " | " 
+		<< std::setfill (' ') << std::setw (3) << validade;
 	return o;
 }

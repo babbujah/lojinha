@@ -15,7 +15,7 @@ Roupa::getMarca() {
 	return this->marca;
 }
 
-string
+/* string
 Roupa::getSexo() {
 	string s = "";
     switch( sexo ){
@@ -28,33 +28,32 @@ Roupa::getSexo() {
     }
 
 	return s;
+} */
+
+char Roupa::getSexo(){
+	return sexo;
 }
 
-char
-Roupa::getTamanho() {
-	return this->tamanho;
+char Roupa::getTamanho() {
+	return tamanho;
 }
 
-void 
-Roupa::setMarca( string marca ) {
-	this->marca = marca;
+void Roupa::setMarca( string marca ) {
+	marca = marca;
 }
 
-void 
-Roupa::setSexo( char sexo ) {
+void Roupa::setSexo( char sexo ) {
 	this->sexo = sexo;
 }
 
-void 
-Roupa::setTamanho( char tamanho ) {
+void Roupa::setTamanho( char tamanho ) {
 	this->tamanho = tamanho;
 }
  
-std::ostream& 
-Roupa::print( std::ostream &o ) const {
-	o << std::setfill (' ') << std::setw (10) << m_cod_barras << " | " 
-		<< std::setfill ('.') << std::setw (20) << m_descricao << " | " 
-		<< std::setfill (' ') << std::setw (5) << m_preco << " | "
+std::ostream& Roupa::print( std::ostream &o ) const {
+	o << std::setfill (' ') << std::setw (10) << cod_barras << " | " 
+		<< std::setfill ('.') << std::setw (20) << descricao << " | " 
+		<< std::setfill (' ') << std::setw (5) << preco << " | "
 		<< std::setfill (' ') << std::setw (10) << marca << " | " 
 		<< std::setfill (' ') << std::setw (3) << sexo << " | "
         << std::setfill (' ') << std::setw (3) << tamanho;
