@@ -1,0 +1,15 @@
+# Ignora o arquivo de teste/homologação
+homolog.cpp
+
+# Ignora todos os binarios/executaveis
+bin/*
+
+# Ignora o diretorio de documentacao
+doc/* 
+
+# Ignora os diretorios build e lib
+build/*
+
+*.zip
+
+lojinha
