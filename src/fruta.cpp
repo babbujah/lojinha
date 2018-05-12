@@ -3,9 +3,9 @@
 
 Fruta::Fruta() {}
 
-Fruta::Fruta( std::string codigo, std::string descricao, short preco, 
+Fruta::Fruta( int tag, std::string codigoBarra, std::string descricao, short preco, 
 	std::string data, short validade ):
-	Produto( codigo, descricao, preco ), data_lote( data ), validade( validade ) {}
+	Produto( tag, codigoBarra, descricao, preco ), data_lote( data ), validade( validade ) {}
 
 Fruta::~Fruta() {}
 

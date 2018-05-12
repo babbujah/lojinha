@@ -8,7 +8,7 @@ using std::string;
 class Bebida : public Produto{
     public:
         Bebida();
-        Bebida( string codigo, string descricao, short preco, short teorAlcoolico );
+        Bebida( int tag, string codigoBarra, string descricao, short preco, short teorAlcoolico );
         ~Bebida();
 
     private:
@@ -16,7 +16,6 @@ class Bebida : public Produto{
         
     public:
         // getters
-        //string getTeorAlcoolico();
         short getTeorAlcoolico();
 
         // setters

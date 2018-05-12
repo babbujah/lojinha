@@ -7,10 +7,10 @@
 
 Bebida::Bebida() {}
 
-Bebida::Bebida( string codigo, string descricao, short preco, 
+Bebida::Bebida( int tag, string codigoBarra, string descricao, short preco, 
 	short teorAlcoolico ):
-	Produto( codigo, descricao, preco ),
-    teorAlcoolico( teorAlcoolico ) {}
+	Produto( tag, codigoBarra, descricao, preco ),
+	teorAlcoolico( teorAlcoolico ) {}
 
 Bebida::~Bebida() {}
 

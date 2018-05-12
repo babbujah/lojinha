@@ -8,26 +8,25 @@ using std::string;
 class Roupa : public Produto{
     public:
         Roupa();
-        Roupa( string codigo, string descricao, short preco, 
-                string marca, char sexo, char tamanho );
+        Roupa( int tag, string codigoBarra, string descricao, short preco, 
+                string marca, string sexo, string tamanho );
         ~Roupa();
 
     private:
         string marca;
-        char sexo;
-        char tamanho;
+        string sexo;
+        string tamanho;
         
     public:
         // getters
         string getMarca();
-        //string getSexo();
-        char getSexo();
-        char getTamanho();
+        string getSexo();
+        string getTamanho();
 
         // setters
         void setMarca( string marca );
-        void setSexo( char sexo );
-        void setTamanho( char tamanho );
+        void setSexo( string sexo );
+        void setTamanho( string tamanho );
 
     private:
         std::ostream& print( std::ostream &o ) const;

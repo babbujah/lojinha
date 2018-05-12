@@ -6,14 +6,16 @@
 class Produto{
 public:
 	Produto();
-	Produto( std::string codigo, std::string descricao, short preco );
+	Produto( int tag, std::string codigo, std::string descricao, short preco );
 	virtual ~Produto();
 protected:
+	int tag;
 	std::string cod_barras;
 	std::string descricao;
 	double preco;		
 public:
 	// getters
+	int getTag();
 	std::string getCodBarras();
 	std::string getDescricao();
 	double getPreco();

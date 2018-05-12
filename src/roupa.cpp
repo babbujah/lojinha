@@ -3,9 +3,9 @@
 
 Roupa::Roupa() {}
 
-Roupa::Roupa( string codigo, string descricao, short preco, 
-	string marca, char sexo, char tamanho ):
-	Produto( codigo, descricao, preco ),
+Roupa::Roupa( int tag, string codigoBarra, string descricao, short preco, 
+	string marca, string sexo, string tamanho ):
+	Produto( tag, codigoBarra, descricao, preco ),
     marca( marca ), sexo( sexo ), tamanho( tamanho ) {}
 
 Roupa::~Roupa() {}
@@ -30,11 +30,11 @@ Roupa::getSexo() {
 	return s;
 } */
 
-char Roupa::getSexo(){
+string Roupa::getSexo(){
 	return sexo;
 }
 
-char Roupa::getTamanho() {
+string Roupa::getTamanho() {
 	return tamanho;
 }
 
@@ -42,11 +42,11 @@ void Roupa::setMarca( string marca ) {
 	marca = marca;
 }
 
-void Roupa::setSexo( char sexo ) {
+void Roupa::setSexo( string sexo ) {
 	this->sexo = sexo;
 }
 
-void Roupa::setTamanho( char tamanho ) {
+void Roupa::setTamanho( string tamanho ) {
 	this->tamanho = tamanho;
 }
  

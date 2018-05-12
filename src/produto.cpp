@@ -5,8 +5,12 @@ Produto::Produto(){}
 
 Produto::~Produto(){}
 
-Produto::Produto( std::string codigo, std::string descricao, short preco ):
-	cod_barras( codigo ), descricao( descricao ), preco( preco ) {}
+Produto::Produto( int tag, std::string codigo, std::string descricao, short preco ):
+	tag( tag ), cod_barras( codigo ), descricao( descricao ), preco( preco ) {}
+
+int Produto::getTag(){
+	return tag;
+}
 
 std::string Produto::getCodBarras() {
 	return cod_barras;
@@ -37,7 +41,7 @@ double operator+ ( Produto &a, Produto &b ){
 }
 
 double operator- ( Produto &a, Produto &b ){
-	return a.getPreco() + b.getPreco();
+	return a.getPreco() - b.getPreco();
 }
 
 bool operator== (Produto &a, Produto &b){
