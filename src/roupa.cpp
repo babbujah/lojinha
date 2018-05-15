@@ -1,3 +1,16 @@
+/**
+ * @file	roupa.cpp
+ * @brief	Implementação da classe Roupa em C++
+ * @author	Bruno César L. Silva
+ * @since	10/05/2018
+ * @date	14/05/2018
+ * 
+ * @section DESCRIÇÃO
+ *  
+ * Implementa a classe Roupa,
+ * derivada da classe Produto.
+ */
+
 #include <iomanip>
 #include "roupa.h"
 
@@ -49,7 +62,13 @@ void Roupa::setSexo( string sexo ) {
 void Roupa::setTamanho( string tamanho ) {
 	this->tamanho = tamanho;
 }
- 
+
+/**
+* @brief Método virtual puro print
+* @detail Define a interface para impressão das informações de Roupa declaradas pela classe base Produto
+* @param ostream & operador de inserção
+* @return Retorna uma instância do operador de inserção
+*/
 std::ostream& Roupa::print( std::ostream &o ) const {
 	o << std::setfill (' ') << std::setw (10) << cod_barras << " | " 
 		<< std::setfill ('.') << std::setw (20) << descricao << " | " 

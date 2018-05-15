@@ -1,3 +1,16 @@
+/**
+ * @file	produto.cpp
+ * @brief	Implementação da classe Produto em C++
+ * @author	Bruno César L. Silva
+ * @since	10/05/2018
+ * @date	14/05/2018
+ * 
+ * @section DESCRIÇÃO
+ *  
+ * Implementa a classe Produto genêrica,
+ * base para todos os produtos da aplicação.
+ */
+
 #include <iostream>
 #include "produto.h"
 
