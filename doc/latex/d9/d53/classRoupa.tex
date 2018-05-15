@@ -1,0 +1,181 @@
+\hypertarget{classRoupa}{\section{Referência à classe Roupa}
+\label{classRoupa}\index{Roupa@{Roupa}}
+}
+
+
+Classe \hyperlink{classRoupa}{Roupa}, derivada de \hyperlink{classProduto}{Produto}.  
+
+
+
+
+{\ttfamily \#include $<$roupa.\-h$>$}
+
+Diagrama de heranças da classe Roupa\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d9/d53/classRoupa}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRoupa_a0b8186c1c35089bebd88c8a3d0acf74b}{\hyperlink{classRoupa_a0b8186c1c35089bebd88c8a3d0acf74b}{Roupa} ()}\label{classRoupa_a0b8186c1c35089bebd88c8a3d0acf74b}
+
+\begin{DoxyCompactList}\small\item\em Método construtor padrão de \hyperlink{classRoupa}{Roupa}. \end{DoxyCompactList}\item 
+\hyperlink{classRoupa_aad1c967e981fd9605e0548432d035770}{Roupa} (int \hyperlink{classProduto_a76711f92305c825f07549734cd7c6ade}{tag}, string codigo\-Barra, string \hyperlink{classProduto_ab04a024e24feb7f79774e280356f6bc7}{descricao}, short \hyperlink{classProduto_a2ad13f91582fd70e878fc449c7b77171}{preco}, string marca, string sexo, string tamanho)
+\begin{DoxyCompactList}\small\item\em Método construtor parametrizado de \hyperlink{classRoupa}{Roupa}. \end{DoxyCompactList}\item 
+\hypertarget{classRoupa_af7d0589e854d5dfef94346856d417544}{\hyperlink{classRoupa_af7d0589e854d5dfef94346856d417544}{$\sim$\-Roupa} ()}\label{classRoupa_af7d0589e854d5dfef94346856d417544}
+
+\begin{DoxyCompactList}\small\item\em Interface destrutor de \hyperlink{classProduto}{Produto} definida para \hyperlink{classRoupa}{Roupa}  Método virtual da classe \hyperlink{classProduto}{Produto} redefinida para um objeto \hyperlink{classRoupa}{Roupa}. \end{DoxyCompactList}\item 
+string \hyperlink{classRoupa_a627cb05c4d7401b97bae9902b6fcbff8}{get\-Marca} ()
+\begin{DoxyCompactList}\small\item\em Método de captura de marca. \end{DoxyCompactList}\item 
+string \hyperlink{classRoupa_aa9048e6bf54153c4217e75666458f969}{get\-Sexo} ()
+\begin{DoxyCompactList}\small\item\em Método de captura de sexo. \end{DoxyCompactList}\item 
+string \hyperlink{classRoupa_add2ba0c5b5b10c0d99cd85363ce22960}{get\-Tamanho} ()
+\begin{DoxyCompactList}\small\item\em Método de captura de tamanho. \end{DoxyCompactList}\item 
+void \hyperlink{classRoupa_a7a5daab180f39dc0f6356f0a029b7174}{set\-Marca} (string marca)
+\begin{DoxyCompactList}\small\item\em Método de atribuição de marca. \end{DoxyCompactList}\item 
+void \hyperlink{classRoupa_a6cf689693ff15cb33cf258171ccd11db}{set\-Sexo} (string sexo)
+\begin{DoxyCompactList}\small\item\em Método de atribuição de categoria sexo. \end{DoxyCompactList}\item 
+void \hyperlink{classRoupa_a26a2f97971c92f32b9eb5b3c73d2d825}{set\-Tamanho} (string tamanho)
+\begin{DoxyCompactList}\small\item\em Método de atribuição de tamanho. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+Classe \hyperlink{classRoupa}{Roupa}, derivada de \hyperlink{classProduto}{Produto}. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{classRoupa_aad1c967e981fd9605e0548432d035770}{\index{Roupa@{Roupa}!Roupa@{Roupa}}
+\index{Roupa@{Roupa}!Roupa@{Roupa}}
+\subsubsection[{Roupa}]{\setlength{\rightskip}{0pt plus 5cm}Roupa\-::\-Roupa (
+\begin{DoxyParamCaption}
+\item[{int}]{tag, }
+\item[{string}]{codigo\-Barra, }
+\item[{string}]{descricao, }
+\item[{short}]{preco, }
+\item[{string}]{marca, }
+\item[{string}]{sexo, }
+\item[{string}]{tamanho}
+\end{DoxyParamCaption}
+)}}\label{classRoupa_aad1c967e981fd9605e0548432d035770}
+
+
+Método construtor parametrizado de \hyperlink{classRoupa}{Roupa}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em int} & tag -\/ categoria do \hyperlink{classProduto}{Produto} \\
+\hline
+{\em string} & codigo -\/ Codigo de barras do \hyperlink{classProduto}{Produto} \\
+\hline
+{\em string} & descricao -\/ Descrição do \hyperlink{classProduto}{Produto} \\
+\hline
+{\em short} & preco -\/ Preço do \hyperlink{classProduto}{Produto} \\
+\hline
+{\em string} & marca -\/ Recebe a marca da roupa \\
+\hline
+{\em string} & sexo -\/ Define a categoria da roupa em relação a sexo \\
+\hline
+{\em string} & tamanho -\/ Define o tamanho da roupa \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{classRoupa_a627cb05c4d7401b97bae9902b6fcbff8}{\index{Roupa@{Roupa}!get\-Marca@{get\-Marca}}
+\index{get\-Marca@{get\-Marca}!Roupa@{Roupa}}
+\subsubsection[{get\-Marca}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Roupa\-::get\-Marca (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRoupa_a627cb05c4d7401b97bae9902b6fcbff8}
+
+
+Método de captura de marca. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna a marca do produto 
+\end{DoxyReturn}
+\hypertarget{classRoupa_aa9048e6bf54153c4217e75666458f969}{\index{Roupa@{Roupa}!get\-Sexo@{get\-Sexo}}
+\index{get\-Sexo@{get\-Sexo}!Roupa@{Roupa}}
+\subsubsection[{get\-Sexo}]{\setlength{\rightskip}{0pt plus 5cm}string Roupa\-::get\-Sexo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRoupa_aa9048e6bf54153c4217e75666458f969}
+
+
+Método de captura de sexo. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna a categoria sexo da \hyperlink{classRoupa}{Roupa} 
+\end{DoxyReturn}
+\hypertarget{classRoupa_add2ba0c5b5b10c0d99cd85363ce22960}{\index{Roupa@{Roupa}!get\-Tamanho@{get\-Tamanho}}
+\index{get\-Tamanho@{get\-Tamanho}!Roupa@{Roupa}}
+\subsubsection[{get\-Tamanho}]{\setlength{\rightskip}{0pt plus 5cm}string Roupa\-::get\-Tamanho (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRoupa_add2ba0c5b5b10c0d99cd85363ce22960}
+
+
+Método de captura de tamanho. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna o tamanho da roupa 
+\end{DoxyReturn}
+\hypertarget{classRoupa_a7a5daab180f39dc0f6356f0a029b7174}{\index{Roupa@{Roupa}!set\-Marca@{set\-Marca}}
+\index{set\-Marca@{set\-Marca}!Roupa@{Roupa}}
+\subsubsection[{set\-Marca}]{\setlength{\rightskip}{0pt plus 5cm}void Roupa\-::set\-Marca (
+\begin{DoxyParamCaption}
+\item[{string}]{marca}
+\end{DoxyParamCaption}
+)}}\label{classRoupa_a7a5daab180f39dc0f6356f0a029b7174}
+
+
+Método de atribuição de marca. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Recebe} & string marca \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRoupa_a6cf689693ff15cb33cf258171ccd11db}{\index{Roupa@{Roupa}!set\-Sexo@{set\-Sexo}}
+\index{set\-Sexo@{set\-Sexo}!Roupa@{Roupa}}
+\subsubsection[{set\-Sexo}]{\setlength{\rightskip}{0pt plus 5cm}void Roupa\-::set\-Sexo (
+\begin{DoxyParamCaption}
+\item[{string}]{sexo}
+\end{DoxyParamCaption}
+)}}\label{classRoupa_a6cf689693ff15cb33cf258171ccd11db}
+
+
+Método de atribuição de categoria sexo. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Recebe} & string sexo \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRoupa_a26a2f97971c92f32b9eb5b3c73d2d825}{\index{Roupa@{Roupa}!set\-Tamanho@{set\-Tamanho}}
+\index{set\-Tamanho@{set\-Tamanho}!Roupa@{Roupa}}
+\subsubsection[{set\-Tamanho}]{\setlength{\rightskip}{0pt plus 5cm}void Roupa\-::set\-Tamanho (
+\begin{DoxyParamCaption}
+\item[{string}]{tamanho}
+\end{DoxyParamCaption}
+)}}\label{classRoupa_a26a2f97971c92f32b9eb5b3c73d2d825}
+
+
+Método de atribuição de tamanho. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Recebe} & string tamanho \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+include/roupa.\-h\item 
+src/\hyperlink{roupa_8cpp}{roupa.\-cpp}\end{DoxyCompactItemize}

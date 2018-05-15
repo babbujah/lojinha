@@ -1,0 +1,109 @@
+\hypertarget{produto_8cpp}{\section{Referência ao ficheiro src/produto.cpp}
+\label{produto_8cpp}\index{src/produto.\-cpp@{src/produto.\-cpp}}
+}
+
+
+Implementação da classe \hyperlink{classProduto}{Produto} em C++.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}produto.\-h\char`\"{}}\\*
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{produto_8cpp_a13cc75bc264a9557efef0353b184d3e4}{operator+} (\hyperlink{classProduto}{Produto} \&a, \hyperlink{classProduto}{Produto} \&b)
+\item 
+double \hyperlink{produto_8cpp_af98881fb5c5587f7372a27edbe6bd808}{operator-\/} (\hyperlink{classProduto}{Produto} \&a, \hyperlink{classProduto}{Produto} \&b)
+\item 
+bool \hyperlink{produto_8cpp_adf4b96b0581708b8aa8bb2932bac578a}{operator==} (\hyperlink{classProduto}{Produto} \&a, \hyperlink{classProduto}{Produto} \&b)
+\item 
+std\-::ostream \& \hyperlink{produto_8cpp_a3f8bbab15d5b8943ac04af1bc6eec1bf}{operator$<$$<$} (std\-::ostream \&o, \hyperlink{classProduto}{Produto} const \&p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+Implementação da classe \hyperlink{classProduto}{Produto} em C++. \begin{DoxyAuthor}{Autor}
+Bruno César L. Silva 
+\end{DoxyAuthor}
+\begin{DoxySince}{Desde}
+10/05/2018 
+\end{DoxySince}
+\begin{DoxyDate}{Data}
+14/05/2018
+\end{DoxyDate}
+\hypertarget{roupa_8cpp_DESCRIÇÃO}{}\subsection{D\-E\-S\-C\-R\-IÇÃ\-O}\label{roupa_8cpp_DESCRIÇÃO}
+Implementa a classe \hyperlink{classProduto}{Produto} genêrica, base para todos os produtos da aplicação. 
+
+\subsection{Documentação das funções}
+\hypertarget{produto_8cpp_a13cc75bc264a9557efef0353b184d3e4}{\index{produto.\-cpp@{produto.\-cpp}!operator+@{operator+}}
+\index{operator+@{operator+}!produto.cpp@{produto.\-cpp}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}double operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Produto} \&}]{a, }
+\item[{{\bf Produto} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{produto_8cpp_a13cc75bc264a9557efef0353b184d3e4}
+
+\begin{DoxyParams}{Parâmetros}
+{\em \hyperlink{classProduto}{Produto}} & \&a instância de \hyperlink{classProduto}{Produto} \\
+\hline
+{\em \hyperlink{classProduto}{Produto}} & \&b instância de \hyperlink{classProduto}{Produto} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+retorna um double resultado da soma dos preços de dois Produtos 
+\end{DoxyReturn}
+\hypertarget{produto_8cpp_af98881fb5c5587f7372a27edbe6bd808}{\index{produto.\-cpp@{produto.\-cpp}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!produto.cpp@{produto.\-cpp}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}double operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Produto} \&}]{a, }
+\item[{{\bf Produto} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{produto_8cpp_af98881fb5c5587f7372a27edbe6bd808}
+
+\begin{DoxyParams}{Parâmetros}
+{\em \hyperlink{classProduto}{Produto}} & \&a instância de \hyperlink{classProduto}{Produto} \\
+\hline
+{\em \hyperlink{classProduto}{Produto}} & \&b instância de \hyperlink{classProduto}{Produto} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+retorna um double resultado da subtração dos preços de dois Produtos 
+\end{DoxyReturn}
+\hypertarget{produto_8cpp_a3f8bbab15d5b8943ac04af1bc6eec1bf}{\index{produto.\-cpp@{produto.\-cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!produto.cpp@{produto.\-cpp}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{o, }
+\item[{{\bf Produto} const \&}]{p}
+\end{DoxyParamCaption}
+)}}\label{produto_8cpp_a3f8bbab15d5b8943ac04af1bc6eec1bf}
+
+\begin{DoxyParams}{Parâmetros}
+{\em ostream} & \&o operador de inserção \\
+\hline
+{\em \hyperlink{classProduto}{Produto}} & t uma instância de produto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+retorna a instância do operador de inserção 
+\end{DoxyReturn}
+\hypertarget{produto_8cpp_adf4b96b0581708b8aa8bb2932bac578a}{\index{produto.\-cpp@{produto.\-cpp}!operator==@{operator==}}
+\index{operator==@{operator==}!produto.cpp@{produto.\-cpp}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Produto} \&}]{a, }
+\item[{{\bf Produto} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{produto_8cpp_adf4b96b0581708b8aa8bb2932bac578a}
+
+\begin{DoxyParams}{Parâmetros}
+{\em \hyperlink{classProduto}{Produto}} & \&a instância de \hyperlink{classProduto}{Produto} \\
+\hline
+{\em \hyperlink{classProduto}{Produto}} & \&b instância de \hyperlink{classProduto}{Produto} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Se os códigos de barras forem iguais retorna true, se não, falso 
+\end{DoxyReturn}

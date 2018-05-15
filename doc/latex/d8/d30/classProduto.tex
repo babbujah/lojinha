@@ -1,0 +1,303 @@
+\hypertarget{classProduto}{\section{Referência à classe Produto}
+\label{classProduto}\index{Produto@{Produto}}
+}
+Diagrama de heranças da classe Produto\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d8/d30/classProduto}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classProduto_adcd5834a1f04cc42fef88bf60217b8f4}{\hyperlink{classProduto_adcd5834a1f04cc42fef88bf60217b8f4}{Produto} ()}\label{classProduto_adcd5834a1f04cc42fef88bf60217b8f4}
+
+\begin{DoxyCompactList}\small\item\em Método construtor padrão de produto. \end{DoxyCompactList}\item 
+\hyperlink{classProduto_ae44d64ad61a5fa8b0f7af193a2f526f4}{Produto} (int \hyperlink{classProduto_a76711f92305c825f07549734cd7c6ade}{tag}, std\-::string codigo, std\-::string \hyperlink{classProduto_ab04a024e24feb7f79774e280356f6bc7}{descricao}, short \hyperlink{classProduto_a2ad13f91582fd70e878fc449c7b77171}{preco})
+\begin{DoxyCompactList}\small\item\em Método construtor parametrizado de produto. \end{DoxyCompactList}\item 
+\hypertarget{classProduto_a84a8b28176b743e8c74bfd89aee9a9b2}{virtual \hyperlink{classProduto_a84a8b28176b743e8c74bfd89aee9a9b2}{$\sim$\-Produto} ()}\label{classProduto_a84a8b28176b743e8c74bfd89aee9a9b2}
+
+\begin{DoxyCompactList}\small\item\em Interface destrutor de \hyperlink{classProduto}{Produto}  Método virtual da classe \hyperlink{classProduto}{Produto} capaz de ser redefinido (sobrecarregado) por suas classes derivadas. \end{DoxyCompactList}\item 
+int \hyperlink{classProduto_a60c26b830a7fd5409a7b4e5a3abcecce}{get\-Tag} ()
+\begin{DoxyCompactList}\small\item\em Método de captura da Tag. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classProduto_aa8e9057d5f0ac3d145333223cb513b3e}{get\-Cod\-Barras} ()
+\begin{DoxyCompactList}\small\item\em Método de captura de Cod\-Barras. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classProduto_ada2c72e139e09afa967aa06a4290d5f8}{get\-Descricao} ()
+\begin{DoxyCompactList}\small\item\em Método de captura de Descrição. \end{DoxyCompactList}\item 
+double \hyperlink{classProduto_a53548783d7fad3ea6d5e000fa2227dcf}{get\-Preco} ()
+\begin{DoxyCompactList}\small\item\em Método de captura de preço. \end{DoxyCompactList}\item 
+void \hyperlink{classProduto_adec0c5a9864579405d522f0d405396d9}{set\-Cod\-Barras} (std\-::string codigo)
+\begin{DoxyCompactList}\small\item\em Método de atribuição de Cod\-Barras. \end{DoxyCompactList}\item 
+void \hyperlink{classProduto_afdc63d61e7948b1ae4b72b29d1115571}{set\-Descricao} (std\-::string \hyperlink{classProduto_ab04a024e24feb7f79774e280356f6bc7}{descricao})
+\begin{DoxyCompactList}\small\item\em Método de atribuição de Descrição. \end{DoxyCompactList}\item 
+void \hyperlink{classProduto_aba1d39de900f61e612219a42781f7f7e}{set\-Preco} (double \hyperlink{classProduto_a2ad13f91582fd70e878fc449c7b77171}{preco})
+\begin{DoxyCompactList}\small\item\em Método de atribuição de preço. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classProduto_a76711f92305c825f07549734cd7c6ade}{tag}
+\item 
+std\-::string \hyperlink{classProduto_a81dc2fcc260450b37524278699094f0b}{cod\-\_\-barras}
+\item 
+std\-::string \hyperlink{classProduto_ab04a024e24feb7f79774e280356f6bc7}{descricao}
+\item 
+double \hyperlink{classProduto_a2ad13f91582fd70e878fc449c7b77171}{preco}
+\end{DoxyCompactItemize}
+\subsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+std\-::ostream \& \hyperlink{classProduto_a75e56b3684b7859fc15d147b7d27f6b0}{operator$<$$<$} (std\-::ostream \&o, \hyperlink{classProduto}{Produto} const \&t)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de inserção para objeto \hyperlink{classProduto}{Produto}.  imprime na saída padrão as informações do \hyperlink{classProduto}{Produto}. \end{DoxyCompactList}\item 
+double \hyperlink{classProduto_a13cc75bc264a9557efef0353b184d3e4}{operator+} (\hyperlink{classProduto}{Produto} \&a, \hyperlink{classProduto}{Produto} \&b)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de adição para objeto \hyperlink{classProduto}{Produto}.  imprime na saída padrão a soma dos valores de proeços de dois Produtos. \end{DoxyCompactList}\item 
+double \hyperlink{classProduto_af98881fb5c5587f7372a27edbe6bd808}{operator-\/} (\hyperlink{classProduto}{Produto} \&a, \hyperlink{classProduto}{Produto} \&b)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de subtração para objeto \hyperlink{classProduto}{Produto}.  imprime na saída padrão a subtração dos valores de preços de dois Produtos. \end{DoxyCompactList}\item 
+bool \hyperlink{classProduto_adf4b96b0581708b8aa8bb2932bac578a}{operator==} (\hyperlink{classProduto}{Produto} \&a, \hyperlink{classProduto}{Produto} \&b)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de comparação de igualdade para objeto \hyperlink{classProduto}{Produto}.  Compara os códigos de barras de dois produtos a fim de verificar se são iguais. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{classProduto_ae44d64ad61a5fa8b0f7af193a2f526f4}{\index{Produto@{Produto}!Produto@{Produto}}
+\index{Produto@{Produto}!Produto@{Produto}}
+\subsubsection[{Produto}]{\setlength{\rightskip}{0pt plus 5cm}Produto\-::\-Produto (
+\begin{DoxyParamCaption}
+\item[{int}]{tag, }
+\item[{std\-::string}]{codigo, }
+\item[{std\-::string}]{descricao, }
+\item[{short}]{preco}
+\end{DoxyParamCaption}
+)}}\label{classProduto_ae44d64ad61a5fa8b0f7af193a2f526f4}
+
+
+Método construtor parametrizado de produto. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em int} & tag -\/ categoria do \hyperlink{classProduto}{Produto} \\
+\hline
+{\em string} & codigo -\/ Codigo de barras do \hyperlink{classProduto}{Produto} \\
+\hline
+{\em string} & descricao -\/ Descrição do \hyperlink{classProduto}{Produto} \\
+\hline
+{\em short} & preco -\/ Preço do \hyperlink{classProduto}{Produto} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentação dos métodos}
+\hypertarget{classProduto_aa8e9057d5f0ac3d145333223cb513b3e}{\index{Produto@{Produto}!get\-Cod\-Barras@{get\-Cod\-Barras}}
+\index{get\-Cod\-Barras@{get\-Cod\-Barras}!Produto@{Produto}}
+\subsubsection[{get\-Cod\-Barras}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Produto\-::get\-Cod\-Barras (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classProduto_aa8e9057d5f0ac3d145333223cb513b3e}
+
+
+Método de captura de Cod\-Barras. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna o código de barras do produto 
+\end{DoxyReturn}
+\hypertarget{classProduto_ada2c72e139e09afa967aa06a4290d5f8}{\index{Produto@{Produto}!get\-Descricao@{get\-Descricao}}
+\index{get\-Descricao@{get\-Descricao}!Produto@{Produto}}
+\subsubsection[{get\-Descricao}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Produto\-::get\-Descricao (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classProduto_ada2c72e139e09afa967aa06a4290d5f8}
+
+
+Método de captura de Descrição. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna a descrição do produto 
+\end{DoxyReturn}
+\hypertarget{classProduto_a53548783d7fad3ea6d5e000fa2227dcf}{\index{Produto@{Produto}!get\-Preco@{get\-Preco}}
+\index{get\-Preco@{get\-Preco}!Produto@{Produto}}
+\subsubsection[{get\-Preco}]{\setlength{\rightskip}{0pt plus 5cm}double Produto\-::get\-Preco (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classProduto_a53548783d7fad3ea6d5e000fa2227dcf}
+
+
+Método de captura de preço. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna o preço do produto 
+\end{DoxyReturn}
+\hypertarget{classProduto_a60c26b830a7fd5409a7b4e5a3abcecce}{\index{Produto@{Produto}!get\-Tag@{get\-Tag}}
+\index{get\-Tag@{get\-Tag}!Produto@{Produto}}
+\subsubsection[{get\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}int Produto\-::get\-Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classProduto_a60c26b830a7fd5409a7b4e5a3abcecce}
+
+
+Método de captura da Tag. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna a tag do produto 
+\end{DoxyReturn}
+\hypertarget{classProduto_adec0c5a9864579405d522f0d405396d9}{\index{Produto@{Produto}!set\-Cod\-Barras@{set\-Cod\-Barras}}
+\index{set\-Cod\-Barras@{set\-Cod\-Barras}!Produto@{Produto}}
+\subsubsection[{set\-Cod\-Barras}]{\setlength{\rightskip}{0pt plus 5cm}void Produto\-::set\-Cod\-Barras (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{codigo}
+\end{DoxyParamCaption}
+)}}\label{classProduto_adec0c5a9864579405d522f0d405396d9}
+
+
+Método de atribuição de Cod\-Barras. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Recebe} & string codigo \\
+\hline
+\end{DoxyParams}
+\hypertarget{classProduto_afdc63d61e7948b1ae4b72b29d1115571}{\index{Produto@{Produto}!set\-Descricao@{set\-Descricao}}
+\index{set\-Descricao@{set\-Descricao}!Produto@{Produto}}
+\subsubsection[{set\-Descricao}]{\setlength{\rightskip}{0pt plus 5cm}void Produto\-::set\-Descricao (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{descricao}
+\end{DoxyParamCaption}
+)}}\label{classProduto_afdc63d61e7948b1ae4b72b29d1115571}
+
+
+Método de atribuição de Descrição. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Recebe} & string descricao \\
+\hline
+\end{DoxyParams}
+\hypertarget{classProduto_aba1d39de900f61e612219a42781f7f7e}{\index{Produto@{Produto}!set\-Preco@{set\-Preco}}
+\index{set\-Preco@{set\-Preco}!Produto@{Produto}}
+\subsubsection[{set\-Preco}]{\setlength{\rightskip}{0pt plus 5cm}void Produto\-::set\-Preco (
+\begin{DoxyParamCaption}
+\item[{double}]{preco}
+\end{DoxyParamCaption}
+)}}\label{classProduto_aba1d39de900f61e612219a42781f7f7e}
+
+
+Método de atribuição de preço. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Recebe} & double preco \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentação das classes amigas e funções relacionadas}
+\hypertarget{classProduto_a13cc75bc264a9557efef0353b184d3e4}{\index{Produto@{Produto}!operator+@{operator+}}
+\index{operator+@{operator+}!Produto@{Produto}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}double operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Produto} \&}]{a, }
+\item[{{\bf Produto} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classProduto_a13cc75bc264a9557efef0353b184d3e4}
+
+
+Sobrecarga do operador de adição para objeto \hyperlink{classProduto}{Produto}.  imprime na saída padrão a soma dos valores de proeços de dois Produtos. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \hyperlink{classProduto}{Produto}} & \&a instância de \hyperlink{classProduto}{Produto} \\
+\hline
+{\em \hyperlink{classProduto}{Produto}} & \&b instância de \hyperlink{classProduto}{Produto} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+retorna um double resultado da soma dos preços de dois Produtos 
+\end{DoxyReturn}
+\hypertarget{classProduto_af98881fb5c5587f7372a27edbe6bd808}{\index{Produto@{Produto}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Produto@{Produto}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}double operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Produto} \&}]{a, }
+\item[{{\bf Produto} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classProduto_af98881fb5c5587f7372a27edbe6bd808}
+
+
+Sobrecarga do operador de subtração para objeto \hyperlink{classProduto}{Produto}.  imprime na saída padrão a subtração dos valores de preços de dois Produtos. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \hyperlink{classProduto}{Produto}} & \&a instância de \hyperlink{classProduto}{Produto} \\
+\hline
+{\em \hyperlink{classProduto}{Produto}} & \&b instância de \hyperlink{classProduto}{Produto} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+retorna um double resultado da subtração dos preços de dois Produtos 
+\end{DoxyReturn}
+\hypertarget{classProduto_a75e56b3684b7859fc15d147b7d27f6b0}{\index{Produto@{Produto}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Produto@{Produto}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{o, }
+\item[{{\bf Produto} const \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classProduto_a75e56b3684b7859fc15d147b7d27f6b0}
+
+
+Sobrecarga do operador de inserção para objeto \hyperlink{classProduto}{Produto}.  imprime na saída padrão as informações do \hyperlink{classProduto}{Produto}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em ostream} & \&o operador de inserção \\
+\hline
+{\em \hyperlink{classProduto}{Produto}} & t uma instância de produto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+retorna a instância do operador de inserção 
+\end{DoxyReturn}
+\hypertarget{classProduto_adf4b96b0581708b8aa8bb2932bac578a}{\index{Produto@{Produto}!operator==@{operator==}}
+\index{operator==@{operator==}!Produto@{Produto}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Produto} \&}]{a, }
+\item[{{\bf Produto} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}}\label{classProduto_adf4b96b0581708b8aa8bb2932bac578a}
+
+
+Sobrecarga do operador de comparação de igualdade para objeto \hyperlink{classProduto}{Produto}.  Compara os códigos de barras de dois produtos a fim de verificar se são iguais. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em \hyperlink{classProduto}{Produto}} & \&a instância de \hyperlink{classProduto}{Produto} \\
+\hline
+{\em \hyperlink{classProduto}{Produto}} & \&b instância de \hyperlink{classProduto}{Produto} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Se os códigos de barras forem iguais retorna true, se não, falso 
+\end{DoxyReturn}
+
+
+\subsection{Documentação dos dados membro}
+\hypertarget{classProduto_a81dc2fcc260450b37524278699094f0b}{\index{Produto@{Produto}!cod\-\_\-barras@{cod\-\_\-barras}}
+\index{cod\-\_\-barras@{cod\-\_\-barras}!Produto@{Produto}}
+\subsubsection[{cod\-\_\-barras}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Produto\-::cod\-\_\-barras\hspace{0.3cm}{\ttfamily [protected]}}}\label{classProduto_a81dc2fcc260450b37524278699094f0b}
+define o código de barras do produto \hypertarget{classProduto_ab04a024e24feb7f79774e280356f6bc7}{\index{Produto@{Produto}!descricao@{descricao}}
+\index{descricao@{descricao}!Produto@{Produto}}
+\subsubsection[{descricao}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Produto\-::descricao\hspace{0.3cm}{\ttfamily [protected]}}}\label{classProduto_ab04a024e24feb7f79774e280356f6bc7}
+define a descrição do produto \hypertarget{classProduto_a2ad13f91582fd70e878fc449c7b77171}{\index{Produto@{Produto}!preco@{preco}}
+\index{preco@{preco}!Produto@{Produto}}
+\subsubsection[{preco}]{\setlength{\rightskip}{0pt plus 5cm}double Produto\-::preco\hspace{0.3cm}{\ttfamily [protected]}}}\label{classProduto_a2ad13f91582fd70e878fc449c7b77171}
+define o preço do produto \hypertarget{classProduto_a76711f92305c825f07549734cd7c6ade}{\index{Produto@{Produto}!tag@{tag}}
+\index{tag@{tag}!Produto@{Produto}}
+\subsubsection[{tag}]{\setlength{\rightskip}{0pt plus 5cm}int Produto\-::tag\hspace{0.3cm}{\ttfamily [protected]}}}\label{classProduto_a76711f92305c825f07549734cd7c6ade}
+define a categoria do produto 
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{produto_8h}{produto.\-h}\item 
+src/\hyperlink{produto_8cpp}{produto.\-cpp}\end{DoxyCompactItemize}

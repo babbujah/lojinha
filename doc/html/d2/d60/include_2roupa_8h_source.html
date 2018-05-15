@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Lab 3 Lojinha: Código-Fonte de include/roupa.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Lab 3 Lojinha
+   &#160;<span id="projectnumber">Programa que simula uma loja de conveniência</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="../../pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="../../annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="../../files.html"><span>Ficheiros</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>Lista&#160;de&#160;ficheiros</span></a></li>
+      <li><a href="../../globals.html"><span>Ficheiros&#160;membro</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Ficheiros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funções</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variáveis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Amigos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">roupa.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef ROUPA_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ROUPA_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d2/de5/produto_8h.html">produto.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using</span> std::string;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d9/d53/classRoupa.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/d53/classRoupa.html">Roupa</a> : <span class="keyword">public</span> <a class="code" href="../../d8/d30/classProduto.html">Produto</a>{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="../../d9/d53/classRoupa.html#a0b8186c1c35089bebd88c8a3d0acf74b">Roupa</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="../../d9/d53/classRoupa.html#a0b8186c1c35089bebd88c8a3d0acf74b">Roupa</a>( <span class="keywordtype">int</span> <a class="code" href="../../d8/d30/classProduto.html#a76711f92305c825f07549734cd7c6ade">tag</a>, <span class="keywordtype">string</span> codigoBarra, <span class="keywordtype">string</span> <a class="code" href="../../d8/d30/classProduto.html#ab04a024e24feb7f79774e280356f6bc7">descricao</a>, <span class="keywordtype">short</span> <a class="code" href="../../d8/d30/classProduto.html#a2ad13f91582fd70e878fc449c7b77171">preco</a>, </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keywordtype">string</span> marca, <span class="keywordtype">string</span> sexo, <span class="keywordtype">string</span> tamanho );</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="../../d9/d53/classRoupa.html#af7d0589e854d5dfef94346856d417544">~Roupa</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">string</span> marca; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">string</span> sexo; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">string</span> tamanho; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">// getters</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">string</span> <a class="code" href="../../d9/d53/classRoupa.html#a627cb05c4d7401b97bae9902b6fcbff8">getMarca</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">string</span> <a class="code" href="../../d9/d53/classRoupa.html#aa9048e6bf54153c4217e75666458f969">getSexo</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">string</span> <a class="code" href="../../d9/d53/classRoupa.html#add2ba0c5b5b10c0d99cd85363ce22960">getTamanho</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="comment">// setters</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d9/d53/classRoupa.html#a7a5daab180f39dc0f6356f0a029b7174">setMarca</a>( <span class="keywordtype">string</span> marca );</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d9/d53/classRoupa.html#a6cf689693ff15cb33cf258171ccd11db">setSexo</a>( <span class="keywordtype">string</span> sexo );</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d9/d53/classRoupa.html#a26a2f97971c92f32b9eb5b3c73d2d825">setTamanho</a>( <span class="keywordtype">string</span> tamanho );</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        std::ostream&amp; print( std::ostream &amp;o ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classRoupa_html_aa9048e6bf54153c4217e75666458f969"><div class="ttname"><a href="../../d9/d53/classRoupa.html#aa9048e6bf54153c4217e75666458f969">Roupa::getSexo</a></div><div class="ttdeci">string getSexo()</div><div class="ttdoc">Método de captura de sexo. </div><div class="ttdef"><b>Definition:</b> roupa.cpp:46</div></div>
+<div class="ttc" id="classRoupa_html_a6cf689693ff15cb33cf258171ccd11db"><div class="ttname"><a href="../../d9/d53/classRoupa.html#a6cf689693ff15cb33cf258171ccd11db">Roupa::setSexo</a></div><div class="ttdeci">void setSexo(string sexo)</div><div class="ttdoc">Método de atribuição de categoria sexo. </div><div class="ttdef"><b>Definition:</b> roupa.cpp:58</div></div>
+<div class="ttc" id="classProduto_html_ab04a024e24feb7f79774e280356f6bc7"><div class="ttname"><a href="../../d8/d30/classProduto.html#ab04a024e24feb7f79774e280356f6bc7">Produto::descricao</a></div><div class="ttdeci">std::string descricao</div><div class="ttdef"><b>Definition:</b> produto.h:40</div></div>
+<div class="ttc" id="classProduto_html"><div class="ttname"><a href="../../d8/d30/classProduto.html">Produto</a></div><div class="ttdef"><b>Definition:</b> produto.h:14</div></div>
+<div class="ttc" id="classRoupa_html"><div class="ttname"><a href="../../d9/d53/classRoupa.html">Roupa</a></div><div class="ttdoc">Classe Roupa, derivada de Produto. </div><div class="ttdef"><b>Definition:</b> roupa.h:19</div></div>
+<div class="ttc" id="classRoupa_html_a0b8186c1c35089bebd88c8a3d0acf74b"><div class="ttname"><a href="../../d9/d53/classRoupa.html#a0b8186c1c35089bebd88c8a3d0acf74b">Roupa::Roupa</a></div><div class="ttdeci">Roupa()</div><div class="ttdoc">Método construtor padrão de Roupa. </div><div class="ttdef"><b>Definition:</b> roupa.cpp:17</div></div>
+<div class="ttc" id="classProduto_html_a2ad13f91582fd70e878fc449c7b77171"><div class="ttname"><a href="../../d8/d30/classProduto.html#a2ad13f91582fd70e878fc449c7b77171">Produto::preco</a></div><div class="ttdeci">double preco</div><div class="ttdef"><b>Definition:</b> produto.h:41</div></div>
+<div class="ttc" id="produto_8h_html"><div class="ttname"><a href="../../d2/de5/produto_8h.html">produto.h</a></div><div class="ttdoc">Definição da classe Produto em C++. </div></div>
+<div class="ttc" id="classRoupa_html_a627cb05c4d7401b97bae9902b6fcbff8"><div class="ttname"><a href="../../d9/d53/classRoupa.html#a627cb05c4d7401b97bae9902b6fcbff8">Roupa::getMarca</a></div><div class="ttdeci">string getMarca()</div><div class="ttdoc">Método de captura de marca. </div><div class="ttdef"><b>Definition:</b> roupa.cpp:27</div></div>
+<div class="ttc" id="classRoupa_html_a7a5daab180f39dc0f6356f0a029b7174"><div class="ttname"><a href="../../d9/d53/classRoupa.html#a7a5daab180f39dc0f6356f0a029b7174">Roupa::setMarca</a></div><div class="ttdeci">void setMarca(string marca)</div><div class="ttdoc">Método de atribuição de marca. </div><div class="ttdef"><b>Definition:</b> roupa.cpp:54</div></div>
+<div class="ttc" id="classRoupa_html_a26a2f97971c92f32b9eb5b3c73d2d825"><div class="ttname"><a href="../../d9/d53/classRoupa.html#a26a2f97971c92f32b9eb5b3c73d2d825">Roupa::setTamanho</a></div><div class="ttdeci">void setTamanho(string tamanho)</div><div class="ttdoc">Método de atribuição de tamanho. </div><div class="ttdef"><b>Definition:</b> roupa.cpp:62</div></div>
+<div class="ttc" id="classRoupa_html_add2ba0c5b5b10c0d99cd85363ce22960"><div class="ttname"><a href="../../d9/d53/classRoupa.html#add2ba0c5b5b10c0d99cd85363ce22960">Roupa::getTamanho</a></div><div class="ttdeci">string getTamanho()</div><div class="ttdoc">Método de captura de tamanho. </div><div class="ttdef"><b>Definition:</b> roupa.cpp:50</div></div>
+<div class="ttc" id="classRoupa_html_af7d0589e854d5dfef94346856d417544"><div class="ttname"><a href="../../d9/d53/classRoupa.html#af7d0589e854d5dfef94346856d417544">Roupa::~Roupa</a></div><div class="ttdeci">~Roupa()</div><div class="ttdoc">Interface destrutor de Produto definida para Roupa  Método virtual da classe Produto redefinida para ...</div><div class="ttdef"><b>Definition:</b> roupa.cpp:24</div></div>
+<div class="ttc" id="classProduto_html_a76711f92305c825f07549734cd7c6ade"><div class="ttname"><a href="../../d8/d30/classProduto.html#a76711f92305c825f07549734cd7c6ade">Produto::tag</a></div><div class="ttdeci">int tag</div><div class="ttdef"><b>Definition:</b> produto.h:38</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado em Terça, 15 de Maio de 2018 16:30:49 para Lab 3 Lojinha por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

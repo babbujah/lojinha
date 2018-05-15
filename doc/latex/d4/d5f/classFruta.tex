@@ -1,0 +1,144 @@
+\hypertarget{classFruta}{\section{Referência à classe Fruta}
+\label{classFruta}\index{Fruta@{Fruta}}
+}
+
+
+Classe \hyperlink{classFruta}{Fruta}, derivada de \hyperlink{classProduto}{Produto}.  
+
+
+
+
+{\ttfamily \#include $<$fruta.\-h$>$}
+
+Diagrama de heranças da classe Fruta\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d4/d5f/classFruta}
+\end{center}
+\end{figure}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classFruta_ae1b52e5f60e121e940e9523e71b38e2d}{\hyperlink{classFruta_ae1b52e5f60e121e940e9523e71b38e2d}{Fruta} ()}\label{classFruta_ae1b52e5f60e121e940e9523e71b38e2d}
+
+\begin{DoxyCompactList}\small\item\em Método construtor padrão de \hyperlink{classFruta}{Fruta}. \end{DoxyCompactList}\item 
+\hyperlink{classFruta_aac6c8cb8aaf52d5da49d136f574f0fbc}{Fruta} (int \hyperlink{classProduto_a76711f92305c825f07549734cd7c6ade}{tag}, std\-::string codigo, std\-::string \hyperlink{classProduto_ab04a024e24feb7f79774e280356f6bc7}{descricao}, short \hyperlink{classProduto_a2ad13f91582fd70e878fc449c7b77171}{preco}, std\-::string data, short validade)
+\begin{DoxyCompactList}\small\item\em Método construtor parametrizado de \hyperlink{classFruta}{Fruta}. \end{DoxyCompactList}\item 
+\hypertarget{classFruta_a634920474b757127cb86443d402f84dd}{\hyperlink{classFruta_a634920474b757127cb86443d402f84dd}{$\sim$\-Fruta} ()}\label{classFruta_a634920474b757127cb86443d402f84dd}
+
+\begin{DoxyCompactList}\small\item\em Interface destrutor de \hyperlink{classProduto}{Produto} definida para \hyperlink{classFruta}{Fruta}  Método virtual da classe \hyperlink{classProduto}{Produto} redefinida para um objeto \hyperlink{classFruta}{Fruta}. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classFruta_a89525ef74d892639b1a56dbf1c6ffe61}{get\-Data\-Lote} ()
+\begin{DoxyCompactList}\small\item\em Método de captura de data\-\_\-lote. \end{DoxyCompactList}\item 
+short \hyperlink{classFruta_ab12db1faf3d5a0743ab461bc3315832e}{get\-Validade} ()
+\begin{DoxyCompactList}\small\item\em Método de captura de validade. \end{DoxyCompactList}\item 
+void \hyperlink{classFruta_a9aa6275d0da3c9c80430bce35a3d0467}{set\-Data\-Lote} (std\-::string data)
+\begin{DoxyCompactList}\small\item\em Método de atribuição de data\-\_\-lote. \end{DoxyCompactList}\item 
+void \hyperlink{classFruta_a0ea71bcde4ec328dcfcad0b377848bef}{set\-Validade} (short validade)
+\begin{DoxyCompactList}\small\item\em Método de atribuição de validade. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Descrição detalhada}
+Classe \hyperlink{classFruta}{Fruta}, derivada de \hyperlink{classProduto}{Produto}. 
+
+\subsection{Documentação dos Construtores \& Destrutor}
+\hypertarget{classFruta_aac6c8cb8aaf52d5da49d136f574f0fbc}{\index{Fruta@{Fruta}!Fruta@{Fruta}}
+\index{Fruta@{Fruta}!Fruta@{Fruta}}
+\subsubsection[{Fruta}]{\setlength{\rightskip}{0pt plus 5cm}Fruta\-::\-Fruta (
+\begin{DoxyParamCaption}
+\item[{int}]{tag, }
+\item[{std\-::string}]{codigo\-Barra, }
+\item[{std\-::string}]{descricao, }
+\item[{short}]{preco, }
+\item[{std\-::string}]{data, }
+\item[{short}]{validade}
+\end{DoxyParamCaption}
+)}}\label{classFruta_aac6c8cb8aaf52d5da49d136f574f0fbc}
+
+
+Método construtor parametrizado de \hyperlink{classFruta}{Fruta}. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em int} & tag -\/ categoria do \hyperlink{classProduto}{Produto} \\
+\hline
+{\em string} & codigo -\/ Codigo de barras do \hyperlink{classProduto}{Produto} \\
+\hline
+{\em string} & descricao -\/ Descrição do \hyperlink{classProduto}{Produto} \\
+\hline
+{\em short} & preco -\/ Preço do \hyperlink{classProduto}{Produto} \\
+\hline
+{\em string} & data -\/ Define a data do lote da fruta \\
+\hline
+{\em short} & validade -\/ Define os dias para vencimento a partir da data do lote\\
+\hline
+\end{DoxyParams}
+inicialização da classe base \hyperlink{classProduto}{Produto} 
+
+\subsection{Documentação dos métodos}
+\hypertarget{classFruta_a89525ef74d892639b1a56dbf1c6ffe61}{\index{Fruta@{Fruta}!get\-Data\-Lote@{get\-Data\-Lote}}
+\index{get\-Data\-Lote@{get\-Data\-Lote}!Fruta@{Fruta}}
+\subsubsection[{get\-Data\-Lote}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Fruta\-::get\-Data\-Lote (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classFruta_a89525ef74d892639b1a56dbf1c6ffe61}
+
+
+Método de captura de data\-\_\-lote. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna a data de lote do produto 
+\end{DoxyReturn}
+\hypertarget{classFruta_ab12db1faf3d5a0743ab461bc3315832e}{\index{Fruta@{Fruta}!get\-Validade@{get\-Validade}}
+\index{get\-Validade@{get\-Validade}!Fruta@{Fruta}}
+\subsubsection[{get\-Validade}]{\setlength{\rightskip}{0pt plus 5cm}short Fruta\-::get\-Validade (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classFruta_ab12db1faf3d5a0743ab461bc3315832e}
+
+
+Método de captura de validade. 
+
+\begin{DoxyReturn}{Retorna}
+Retorna a validade 
+\end{DoxyReturn}
+\hypertarget{classFruta_a9aa6275d0da3c9c80430bce35a3d0467}{\index{Fruta@{Fruta}!set\-Data\-Lote@{set\-Data\-Lote}}
+\index{set\-Data\-Lote@{set\-Data\-Lote}!Fruta@{Fruta}}
+\subsubsection[{set\-Data\-Lote}]{\setlength{\rightskip}{0pt plus 5cm}void Fruta\-::set\-Data\-Lote (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{data}
+\end{DoxyParamCaption}
+)}}\label{classFruta_a9aa6275d0da3c9c80430bce35a3d0467}
+
+
+Método de atribuição de data\-\_\-lote. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Recebe} & string data \\
+\hline
+\end{DoxyParams}
+\hypertarget{classFruta_a0ea71bcde4ec328dcfcad0b377848bef}{\index{Fruta@{Fruta}!set\-Validade@{set\-Validade}}
+\index{set\-Validade@{set\-Validade}!Fruta@{Fruta}}
+\subsubsection[{set\-Validade}]{\setlength{\rightskip}{0pt plus 5cm}void Fruta\-::set\-Validade (
+\begin{DoxyParamCaption}
+\item[{short}]{validade}
+\end{DoxyParamCaption}
+)}}\label{classFruta_a0ea71bcde4ec328dcfcad0b377848bef}
+
+
+Método de atribuição de validade. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Recebe} & string validade \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\-:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{fruta_8h}{fruta.\-h}\item 
+src/\hyperlink{fruta_8cpp}{fruta.\-cpp}\end{DoxyCompactItemize}
